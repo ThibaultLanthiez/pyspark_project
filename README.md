@@ -2,23 +2,15 @@
 
 # Projet sur PySpark
 
-STIB is a company providing public transport in Brussels.
+L'objectif de ce projet était d'apprendre à utiliser le framework PySpark.
 
-My team was challenged to analyse data and provide the following insights:
-1. Analyze the vehicle speed over the different network segments, how it varies across segments and over time. 
-2. Analyze the vehicle delays at the different stops, how it varies across stops, and over time.
-3. Given a vehicle start time, do arrival time forecasting at a given stop in the route of this vehicle. 
-4. The GPS tracks are for real people moving in Brussels. In fact they are from the teachers. You are asked to infer the mode of transport of each of these tracks (bus, tram, etc)
-5. Think your own of a valuable analysis on this data (we did a web application with Streamlit)
+Pour cela, nous avions à disposition un jeu de données sur les positions (latitude/longitude) de conducteurs. De plus, nous avions un jeu de données sur certaines zones géographiques de la capitale du Pérou (Lima). 
 
-The teachers have collected about 3 weeks of this data for us:
-* The location of all vehicles every +-30 seconds, encoded in JSON.
-* Shape files describing the map (lines and stops) of STIB network, two snapshots 3 September and 23 September
-* GTFS files containing the offline plan/schedule covering the same period of the vehicle location data, two snapshots 3 September and 23 September
-* In addition you get a number of GPS tracks for task number 2
+L'objectif premier objectif était de déterminer quand quelles zones étaient passés les véhicules pendant leur trajet. Il fallait établir un top 10 des zones les plus empruntées.   
 
+La seconde question était plus ouverte. Nous avons décidé de calculer la vitesse moyenne des usagers et de sortir quelques statistiques comme par exemple l'évolution de ces vitesses à travers les moments de la journée. Enfin, nous avons calculé la zone ou les usagers vont le plus vite. 
 
 # Code
 
-Voici le code du projet : [notebook](https://github.com/ThibaultLanthiez/Prediction-issue-matchs-foot/blob/main/Odds_Football_leagues.ipynb)
+Voici le code du projet : [notebook](https://github.com/ThibaultLanthiez/pyspark_project/blob/main/Notebook%20project.ipynb)
  
